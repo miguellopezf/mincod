@@ -1,0 +1,43 @@
+// VARIABLE
+$color-principal: #ffffff;
+$color-secundario: #7D94FC;
+$color-terciario: #000000;
+$color-cuarto: #919191;
+
+// LISTAS
+$font: 18px, 22px, 45px, 60px;
+
+// OPERACIONES
+$ancho: 100%;
+
+// EXTENDS
+%flex-principal{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+%button-main{
+  color: $color-principal;
+  padding: 20px 28px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 300;
+  border-radius: 35px;
+  border: 2px solid $color-principal;
+}
+
+// MIXIN
+
+@mixin background($repeat, $size, $position, $attachment){
+  background-repeat: $no-repeat;
+  background-size: $cover;
+  background-position: $center;
+  background-attachment: $fixed;
+}
+
+
+
+

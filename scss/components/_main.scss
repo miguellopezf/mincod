@@ -1,0 +1,445 @@
+// index
+
+.hero {
+  height: 450px;
+  background-color: $color-terciario;
+  @extend %flex-principal;
+  width: 100%;
+
+  img {
+    border-radius: 70px;
+    width: 300px;
+    height: 208px;
+    margin-right: 10px;
+  }
+
+  h1 {
+    width: 44%;
+    font-size: 60px;
+    font-weight: 200;
+    line-height: 56px;
+    color: $color-principal;
+    margin-left: 10px;
+  }
+}
+
+.intro-kv {
+  width: 100%;
+  height: auto;
+  background-image: url(../img/im_kv_index.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: $color-principal;
+  padding-bottom: 100px;
+
+  div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    h3 {
+      width: 57%;
+      color: $color-principal;
+      font-size: nth($font, 3);
+      font-weight: 300;
+      line-height: 52px;
+      text-align: center;
+      margin-top: 90px;
+    }
+
+    p {
+      width: 48%;
+      color: $color-principal;
+      font-size: 26px;
+      font-weight: 300;
+      line-height: 40px;
+      text-align: center;
+      margin-top: 35px;
+      margin-bottom: 40px;
+    }
+
+    a {
+      @extend %button-main;
+
+      &:hover {
+        background: $color-principal;
+        color: #000000
+      }
+    }
+  }
+}
+
+.description-kv {
+  div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    img {
+      width: 60%;
+      margin-top: 130px;
+      margin-bottom: 20px;
+    }
+
+    p {
+      width: 60%;
+      font-size: 22px;
+    }
+  }
+
+  article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      width: 600px;
+      margin-top: 100px;
+    }
+
+    div {
+      width: 50%;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: flex-end;
+      margin-top: 20px;
+
+      .icon-lay {
+        width: 40px;
+        margin-right: 20px;
+        margin-bottom: 44px;
+        margin-top: 0px;
+      }
+
+      p {
+        width: 650px;
+        font-size: 22px;
+      }
+    }
+  }
+}
+
+.intro-brand {
+  width: 100%;
+  height: auto;
+  background-image: url(../img/im_brand_index_b.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: $color-principal;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+
+  div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    h3 {
+      width: 60%;
+      color: $color-principal;
+      font-size: nth($font, 3);
+      font-weight: 300;
+      line-height: 52px;
+      text-align: center;
+
+    }
+
+    p {
+      color: $color-principal;
+      font-size: 26px;
+      font-weight: 300;
+      line-height: 45px;
+      text-align: center;
+      margin-top: 35px;
+      margin-bottom: 40px;
+
+    }
+
+    a {
+      @extend %button-main;
+
+      &:hover {
+        background: $color-principal;
+        color: $color-terciario;
+      }
+    }
+  }
+}
+
+.description-brand {
+  width: 100%;
+  height: auto;
+  background-color: $color-principal;
+
+  article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    height: 700px;
+    width: 60%;
+
+    div {
+      img {
+        width: 300px;
+      }
+    }
+
+    div {
+      p {
+        width: 600px;
+
+      }
+    }
+  }
+}
+
+.intro-web {
+  width: 100%;
+  height: auto;
+  background-image: url(../img/im_web_index.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: $color-principal;
+  padding-bottom: 100px;
+
+  div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    h3 {
+      width: 57%;
+      color: $color-principal;
+      font-size: nth($font, 3);
+      font-weight: 300;
+      line-height: 52px;
+      text-align: center;
+      margin-top: 90px;
+    }
+
+    p {
+      width: 48%;
+      color: $color-principal;
+      font-size: 26px;
+      font-weight: 300;
+      line-height: 40px;
+      text-align: center;
+      margin-top: 35px;
+      margin-bottom: 40px;
+
+    }
+
+    a {
+      color: $color-principal;
+      padding: 20px 28px;
+      text-align: center;
+      text-decoration: none;
+      font-size: 18px;
+      font-weight: 300px;
+      border-radius: 35px;
+      border: 2px solid $color-principal;
+
+      &:hover {
+        background: $color-principal;
+        color: #000000
+      }
+
+    }
+
+  }
+}
+
+.description-web {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  height: 600px;
+  width: 60%;
+
+  div {
+    img {
+      margin-right: 10px;
+
+    }
+  }
+
+  div {
+    p {
+      width: 600px;
+      font-size: 22px;
+      margin: 0 auto;
+
+    }
+  }
+}
+
+// KV PAGE
+
+.container-work-kv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 60px;
+  margin-bottom: 60px;
+
+  .work-kv {
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 34px;
+
+    img {
+      border-radius: 25px;
+      margin-bottom: 10px;
+    }
+  }
+}
+
+// BRAND PAGE
+.siboney-sec {
+  margin-top: 100px;
+  margin-bottom: 100px;
+
+  div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    width: 75%;
+
+    .log-siboney {
+      width: 570px;
+      margin-top: 16px;
+    }
+
+  }
+
+  article {
+    width: 52%;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    text-align: center;
+
+    .work-brand {
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+}
+
+.taina-sec {
+  margin-top: 100px;
+  margin-bottom: 100px;
+
+  div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    width: 75%;
+
+    .log-taina {
+      width: 450px;
+
+    }
+  }
+
+  article {
+    width: 52%;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    text-align: center;
+
+  }
+
+  .work-brand {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  }
+}
+.vive-sec {
+  margin-top: 100px;
+  margin-bottom: 100px;
+
+  div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+// WEB PAGE
+.comingsoon-web {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  height: auto;
+
+  h2 {
+    margin-top: 30px;
+  }
+
+  h3 {
+    font-weight: 200;
+    font-size: 90px;
+    letter-spacing: 3px;
+    color: $color-cuarto;
+  }
+}
+
+// ABOUT
+.about-sec {
+  margin-top: 180px;
+  margin-bottom: 180px;
+
+  div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+
+    .mig-working {
+      width: 500px;
+    }
+
+    article {
+      width: 600px;
+      font-size: 18px;
+      margin-left: 20px;
+    }
+  }
+
+}
